@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+
+</head>
+
+<body>
+
+
+
+    <div class="circulo"></div>
+
+    <img src="./img/logo.png" alt="logo starbucks" class="logo">
+
+    <a href="https://www.starbucksathome.com/br/cafes/c" class="menu-buck">MENU CAFÉ</a>
+    <a href="https://www.starbucksathome.com/br/recipe" class="menu-buck">RECEITA</a>
+    <a href="https://www.starbucksathome.com/br/blog.html" class="menu-buck">SAIBA MAIS</a>
+    <a href="https://www.starbucksathome.com/br/cafes/c" class="menu-buck">COMPRE AQUI</a>
+    <a href="https://www.starbucksathome.com/br/customer/account/login/" class="menu-entrar">ENTRAR</a>
+    <a href="https://www.starbucksathome.com/br/customer/account/create/" class="menu-registrar">REGISTRAR</a>
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2> Não é apenas Café, é um <span>Starbucks.</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus id libero, consequuntur tempora voluptate
+                perferendis animi aliquid autem expedita illum consequatur provident ut, distinctio amet ipsam deserunt
+                ullam reprehenderit aspernatur. </p>
+
+            <a href="https://www.youtube.com/watch?v=cHiX1b49giM" class="menu-boto">Deixe o seu LIKE</a>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./img/img1.png" alt="copa starbucks" class="starbucks">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="./img/img-pequena1.png" class="copo-pequeno verde">
+
+        <img src="./img/img-pequena3.png" class="copo-pequeno rosa">
+    </div>
+</body>
+<script>
+
+    let circulo = document.querySelector(".circulo")
+    let imgCopo = document.querySelector(".starbucks")
+    let verde = document.querySelector(".verde")
+
+    let rosa = document.querySelector(".rosa")
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "./img/img1.png"
+        circulo.style.background = "#017143"
+    })
+
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "./img/img3.png"
+        circulo.style.background = "#d752b1"
+    })
+
+</script>
+
+
+
+</html>
